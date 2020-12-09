@@ -1,8 +1,58 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutY="100.0" prefHeight="41.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#SevenButton" prefHeight="40.0" prefWidth="130.0" text="7" />
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#EightButton" prefHeight="40.0" prefWidth="130.0" text="8" />
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#NineButton" prefHeight="40.0" prefWidth="130.0" text="9" />
+            <Button fx:id="divide" mnemonicParsing="false" onAction="#DivideButton" prefHeight="40.0" prefWidth="130.0" text="/" />
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="141.0" prefHeight="41.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="four" mnemonicParsing="false" onAction="#FourButton" prefHeight="40.0" prefWidth="130.0" text="4" />
+            <Button fx:id="five" mnemonicParsing="false" onAction="#FiveButton" prefHeight="40.0" prefWidth="130.0" text="5" />
+            <Button fx:id="six" mnemonicParsing="false" onAction="#SixButton" prefHeight="40.0" prefWidth="130.0" text="6" />
+            <Button fx:id="multiply" mnemonicParsing="false" onAction="#MultyButton" prefHeight="40.0" prefWidth="130.0" text="*" />
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="182.0" prefHeight="41.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="one" mnemonicParsing="false" onAction="#OneButton" prefHeight="40.0" prefWidth="130.0" text="1" />
+            <Button fx:id="two" mnemonicParsing="false" onAction="#TwoButton" prefHeight="40.0" prefWidth="130.0" text="2" />
+            <Button fx:id="three" mnemonicParsing="false" onAction="#ThreeButton" prefHeight="40.0" prefWidth="130.0" text="3" />
+            <Button fx:id="minus" mnemonicParsing="false" onAction="#MinusButton" prefHeight="40.0" prefWidth="130.0" text="-" />
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="223.0" prefHeight="41.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#ZeroButton" prefHeight="40.0" prefWidth="130.0" text="0" />
+            <Button fx:id="decimal" mnemonicParsing="false" onAction="#DecimalButton" prefHeight="40.0" prefWidth="130.0" text="." />
+            <Button fx:id="result" mnemonicParsing="false" onAction="#EqualsButton" prefHeight="40.0" prefWidth="130.0" text="=" />
+            <Button fx:id="plus" mnemonicParsing="false" onAction="#PlusButton" prefHeight="40.0" prefWidth="130.0" text="+" />
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" top="5.0" />
+         </padding>
+      </HBox>
+      <TextField fx:id="textField" prefHeight="95.0" prefWidth="600.0" />
+      <Button fx:id="cancle" layoutX="24.0" layoutY="268.0" mnemonicParsing="false" onAction="#CancleButton" prefHeight="41.0" prefWidth="552.0" text="C" />
+   </children>
+</AnchorPane>
